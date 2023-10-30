@@ -30,9 +30,9 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
 
-  # - name: Build Docker Image
-   #   run: |
-    #    docker build -t sivashreek/kubn:${{ github.run_number }}  -f ./celestradepro/Dockerfile .
+    - name: Build Docker Image
+      run: |
+       docker build -t sivashreek/kubn:${{ github.run_number }}  -f ./celestradepro/Dockerfile .
 
     - name: Log in to Docker Hub
       run: |
