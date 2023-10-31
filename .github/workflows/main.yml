@@ -24,6 +24,7 @@ jobs:
 
     - name: Build Ionic App
       run: npm run build
+      working-directory: ./celestradepro
      
 
     - name: Set up Docker Buildx
