@@ -11,7 +11,7 @@ COPY ./celestradepro/package*.json ./
 RUN npm install
 
 # Install the Ionic CLI globally
-RUN npm install -g ionic
+RUN npm install -g  @ionic/cli
 
 # Copy the rest of the application code to the working directory
 COPY . .
