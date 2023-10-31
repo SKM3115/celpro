@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /app
 
 # Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
+COPY ./celestradepro/package*.json ./
 
 # Install app dependencies
 RUN npm install
@@ -17,7 +17,7 @@ RUN npm install -g ionic
 COPY . .
 
 # Build the Ionic app
-RUN cd /celestradepro/ionic.config.json && ionic build
+RUN ionic build
 
 # Expose the port that the app will run on
 EXPOSE 4200
