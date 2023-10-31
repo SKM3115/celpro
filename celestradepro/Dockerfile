@@ -20,7 +20,7 @@ COPY . .
 RUN ionic build
 
 # Expose the port that the app will run on
-EXPOSE 8100
+EXPOSE 4200
 
 # Start the Ionic app
 CMD ["ionic", "serve", "--host=0.0.0.0", "--disable-host-check"]
