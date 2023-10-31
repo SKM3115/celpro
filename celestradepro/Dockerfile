@@ -17,7 +17,7 @@ RUN npm install -g ionic
 COPY . .
 
 # Build the Ionic app
-RUN  cd /celestradepro/ionic.config.json && ionic init
+RUN ionic init
 
 # Expose the port that the app will run on
 EXPOSE 4200
