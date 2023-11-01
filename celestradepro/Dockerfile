@@ -13,9 +13,6 @@ RUN npm install
 # Install the Ionic CLI globally
 RUN npm install -g  @ionic/cli
 
-# Copy the rest of the application code to the working directory
-COPY . .
-
 # Build the Ionic app
  RUN ionic build
 
