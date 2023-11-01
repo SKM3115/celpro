@@ -17,7 +17,7 @@ RUN npm install -g  @ionic/cli
 COPY . .
 
 # Build the Ionic app
- RUN ionic build
+ RUN ng build
 
 # Expose the port that the app will run on
 EXPOSE 4200
