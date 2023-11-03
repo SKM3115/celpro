@@ -34,6 +34,7 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t sivashreek/kubn:${{ github.run_number }}  -f ./celestradepro/Dockerfile .
+        
     - name: Log in to Docker Hub
       run: |
         docker login -u sivashreek -p shreemani
