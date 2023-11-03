@@ -44,7 +44,7 @@ jobs:
         
     - name: Run Docker Container
       run: |
-        docker run -d -p 4200:4200 sivashreek/kubn:${{ github.run_number }}
+        docker run -d -p 8100:8100 sivashreek/kubn:${{ github.run_number }}
 
 
 
