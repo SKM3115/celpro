@@ -17,10 +17,10 @@ RUN npm install -g ionic
 COPY ./celestradepro .
 
 # Build the Ionic app
-RUN ionic build
+#RUN ionic build
 
 # Expose the port that the app will run on (if necessary)
 EXPOSE 4200
 
 # Use the CMD instruction to specify the command to run when starting the container
-CMD ["ionic", "serve", "--host=0.0.0.0", "--disable-host-check"]
+CMD ["ionic", "serve"]
