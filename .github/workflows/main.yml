@@ -41,9 +41,10 @@ jobs:
     - name: Push Docker Image
       run: |
         docker push sivashreek/kubn:${{ github.run_number }}
+        
     - name: Run Docker Container
       run: |
-        docker run -d -p 4200:4200 sivashreek/kubn:${{ github.run_number }}
+        docker run sivashreek/kubn:${{ github.run_number }}
 
 
 
